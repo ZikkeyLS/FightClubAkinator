@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <!-- Yandex Games SDK -->
-    <script src="https://yandex.ru/games/sdk/v2"></script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | FightClubAkinator</title>
@@ -26,14 +24,7 @@
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var warningBanner = document.querySelector("#unity-warning");
-
-      YaGames
-        .init()
-        .then(ysdk => {
-          console.log('Yandex SDK initialized');
-          window.ysdk = ysdk;
-      });
-
+      
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
