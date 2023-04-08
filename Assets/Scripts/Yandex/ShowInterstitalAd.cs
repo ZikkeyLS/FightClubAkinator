@@ -1,5 +1,6 @@
 using Agava.YandexGames;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ShowInterstitalAd : MonoBehaviour
@@ -20,7 +21,14 @@ public class ShowInterstitalAd : MonoBehaviour
             else
             {
                 _ads.ShowInterstitialAd();
-            } 
+            }
+
+            Restart();
         });
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

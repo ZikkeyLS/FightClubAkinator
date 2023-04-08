@@ -5,7 +5,6 @@ using UnityEngine;
 public class Answer
 {
     public string Text;
-    public VariativeText NewText;
     public Character Character;
 }
 
@@ -13,6 +12,5 @@ public class Answer
 public class Question : ScriptableObject
 {
     [Multiline] public string Text;
-    public VariativeText NewText;
     public Answer[] Answers = new Answer[4];
 }

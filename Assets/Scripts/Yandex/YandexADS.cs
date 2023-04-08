@@ -20,10 +20,6 @@ public class YandexADS : MonoBehaviour
 
     public void ShowInterstitialAd()
     {
-#if !UNITY_WEBGL || UNITY_EDITOR
-        return;
-#endif
-
         InterstitialAd.Show();
     }
 }
