@@ -11,23 +11,32 @@ public class ShowInterstitalAd : MonoBehaviour
 
     void Start()
     {
-        _button.onClick.AddListener(() => 
-        {
-            if (_data.Data.FirstGame)
-            {
-                YandexGamesSdk.RateGame();
-                _data.Data.SetFirstGame(false);
-            }
-            else
-            {
-                _ads.ShowInterstitialAd();
-            }
-
-            Restart();
-        });
+        _button.onClick.AddListener(Restart);
     }
 
     public void Restart()
+    {
+        ChangeContext();
+        ChangeScene();
+    }
+
+    public void ChangeContext()
+    {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        return;
+#endif
+        if (_data.Data.FirstGame)
+        {
+            YandexGamesSdk.RateGame();
+            _data.Data.SetFirstGame(false);
+        }
+        else
+        {
+            _ads.ShowInterstitialAd();
+        }
+    }
+
+    public void ChangeScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

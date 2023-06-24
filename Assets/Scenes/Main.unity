@@ -2080,7 +2080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _texts:
   - {fileID: 2016508849}
-  - {fileID: 0}
   - {fileID: 1884829981}
   - {fileID: 576317170}
   _images:

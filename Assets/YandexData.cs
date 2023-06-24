@@ -21,6 +21,9 @@ public class YandexData : MonoBehaviour
 
     private IEnumerator Start()
     {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        yield break;
+#endif
         yield return new WaitUntil(() => YandexGamesSdk.IsInitialized == true);
 
         Data = new Data();
