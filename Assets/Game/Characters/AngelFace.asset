@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5e57639aa4b5a4aaf16c85ef8c0057, type: 3}
+  m_Name: AngelFace
+  m_EditorClassIdentifier: 
+  FilmCharacter: 3
+  CharacterName: {fileID: 11400000, guid: 461b953c06592c144a5616a8fd959842, type: 2}
+  PersonalityType: 2
+  CharacterImage: {fileID: 21300000, guid: c88b4239a033afa46a0dc2c6f539c201, type: 3}
+  Description: {fileID: 11400000, guid: 6843d2056142133459e81e3a69daf8e5, type: 2}

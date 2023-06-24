@@ -1516,7 +1516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012159, y: -0.0000075102}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 45, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &506450890
@@ -2211,6 +2211,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: {fileID: 75023442}
   _image: {fileID: 1696689721}
+  _alpha: {fileID: 11400000, guid: 718a769e12bd45e4f8fe6ed6e1b76396, type: 2}
+  _beta: {fileID: 11400000, guid: 5fbf0f60e59a0f84ab2ff7c64acea888, type: 2}
+  _sigma: {fileID: 11400000, guid: f203a22d2e0ec9042a148fbbc0856647, type: 2}
+  _omega: {fileID: 11400000, guid: 4b5c0dfdeddfa2b4d90bbb15f1848169, type: 2}
 --- !u!1 &712364271
 GameObject:
   m_ObjectHideFlags: 0
@@ -2923,6 +2927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _textInitializer: {fileID: 1870370002}
+  _testLanguage: 0
 --- !u!114 &1192771511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,6 +4064,10 @@ MonoBehaviour:
     Content: {fileID: 11400000, guid: 007ec3b017a594b41a0de46b155e3dea, type: 2}
   - Text: {fileID: 1884829981}
     Content: {fileID: 11400000, guid: 414e657407dfcbc4a8c5d8ca660e7e6c, type: 2}
+  - Text: {fileID: 712364273}
+    Content: {fileID: 11400000, guid: 091c58f3b686c7945931be566a359e49, type: 2}
+  - Text: {fileID: 597455606}
+    Content: {fileID: 11400000, guid: 4ced8275d7e40014396cbeb559714d3c, type: 2}
 --- !u!4 &1870370003
 Transform:
   m_ObjectHideFlags: 0

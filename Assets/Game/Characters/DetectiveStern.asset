@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5e57639aa4b5a4aaf16c85ef8c0057, type: 3}
+  m_Name: DetectiveStern
+  m_EditorClassIdentifier: 
+  FilmCharacter: 4
+  CharacterName: {fileID: 11400000, guid: e73e30f1c528b134f8cb8ed22914adcd, type: 2}
+  PersonalityType: 3
+  CharacterImage: {fileID: 21300000, guid: b5adddd830101bb43976e1ac108d1d4c, type: 3}
+  Description: {fileID: 11400000, guid: 746828239735e134cb55f20ab4e10d35, type: 2}

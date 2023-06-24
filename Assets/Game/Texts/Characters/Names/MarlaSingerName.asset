@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65e1a3ddf1292ae4a9d777a3fb2f4fd0, type: 3}
-  m_Name: ResultTitle
+  m_Name: MarlaSingerName
   m_EditorClassIdentifier: 
-  _ru: "\u0412\u0410\u0428 \u041F\u0415\u0420\u0421\u041E\u041D\u0410\u0416"
-  _en: YOUR CHARACTER IS
-  _tr: karakteriniz
+  _ru: "\u041C\u0430\u0440\u043B\u0430 \u0421\u0438\u043D\u0433\u0435\u0440"
+  _en: Marla Singer
+  _tr: Marla Singer

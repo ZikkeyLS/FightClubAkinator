@@ -24,8 +24,8 @@ public enum PersonalityType : byte
 public class Character : ScriptableObject
 {
     public FilmCharacter FilmCharacter;
-    public string CharacterName;
+    public VariativeText CharacterName;
     public PersonalityType PersonalityType;
     public Sprite CharacterImage;
-    [Multiline] public string Description;
+    public VariativeText Description;
 }

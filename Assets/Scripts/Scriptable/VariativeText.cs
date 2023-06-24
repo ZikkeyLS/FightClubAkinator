@@ -10,9 +10,9 @@ public enum LanguageYandex
 [CreateAssetMenu(fileName = "VariativeText", menuName = "Game/Text")]
 public class VariativeText : ScriptableObject
 {
-    [Header("Русский")] [InspectorName("")] [Multiline][SerializeField] private string _ru;
-    [Header("Английский")] [InspectorName("")] [Multiline][SerializeField] private string _en;
-    [Header("Турецкий")] [InspectorName("")] [Multiline][SerializeField] private string _tr;
+    [Header("Русский")] [InspectorName("")] [Multiline] [SerializeField] private string _ru;
+    [Header("Английский")] [InspectorName("")] [Multiline] [SerializeField] private string _en;
+    [Header("Турецкий")] [InspectorName("")] [Multiline] [SerializeField] private string _tr;
 
     public string GetText(LanguageYandex language) 
     {

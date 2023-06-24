@@ -6,13 +6,18 @@ public class YandexLanguage : MonoBehaviour
 {
     [SerializeField] private TextInitializer _textInitializer;
 
-    public static LanguageYandex Language = LanguageYandex.ru;
+#if !UNITY_WEBGL || UNITY_EDITOR
+    [SerializeField] private LanguageYandex _testLanguage = LanguageYandex.en;
+#endif
 
+    public static LanguageYandex Language = LanguageYandex.en;
     public static bool Initialized = false;
 
     private IEnumerator Start()
     {
 #if !UNITY_WEBGL || UNITY_EDITOR
+        Language = _testLanguage;
+        Initialized = true;
         yield break;
 #endif
         Initialized = false;
@@ -26,9 +31,11 @@ public class YandexLanguage : MonoBehaviour
             case "en":
                 Language = LanguageYandex.en;
                 break;
+            case "tr":
+                Language = LanguageYandex.tr;
+                break;
         }
 
         Initialized = true;
     }
-
 }

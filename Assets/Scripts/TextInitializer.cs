@@ -16,10 +16,6 @@ public class TextInitializer : MonoBehaviour
 
     private IEnumerator Start()
     {
-#if !UNITY_WEBGL || UNITY_EDITOR
-        yield break;
-#endif
-
         yield return new WaitUntil(() => YandexLanguage.Initialized == true);
 
         foreach (TextUnit unit in _units)
