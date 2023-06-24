@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e1a3ddf1292ae4a9d777a3fb2f4fd0, type: 3}
   m_Name: MainInfo
   m_EditorClassIdentifier: 
-  _ru: "\u0423\u0437\u043D\u0430\u0439, \u043A\u0442\u043E \u0442\u044B \u0438\u0437
-    \u0431\u043E\u0439\u0446\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043A\u043B\u0443\u0431\u0430!"
-  _en: Find out who you are from fight club!
-  _tr: "D\xF6v\xFC\u015F kul\xFCb\xFCnden kim oldu\u011Funu \xF6\u011Fren!"
+  _ru: "\u041A\u0422\u041E \u0422\u042B \u0418\u0417 \u0411\u041E\u0419\u0426\u041E\u0412\u0421\u041A\u041E\u0413\u041E
+    \u041A\u041B\u0423\u0411\u0410?!"
+  _en: WHO ARE YOU FROM FIGHT CLUB?!
+  _tr: "SEN D\xD6V\xDC\u015E KUL\xDCB\xDCNDEN K\u0130MS\u0130N?!"
