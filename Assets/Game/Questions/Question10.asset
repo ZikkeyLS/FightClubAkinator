@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d917e4943dd882148b74f2c6860c7398, type: 3}
   m_Name: Question10
   m_EditorClassIdentifier: 
-  Text: "\u0421\u0430\u043C\u043E\u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D\u0438\u0435
-    - "
+  Text: {fileID: 11400000, guid: 4d9be760678f5ac4aaa381c6f9c5eb75, type: 2}
   Answers:
-  - Text: "\u0421\u043F\u0430\u0441\u0435\u043D\u0438\u0435"
+  - Text: {fileID: 11400000, guid: 5f0716c637d3eec468e197d017ebbfdc, type: 2}
     Character: {fileID: 11400000, guid: 0d4340efae912754abc2a357c786d4a4, type: 2}
-  - Text: "\u0427\u0442\u043E-\u0442\u043E \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435"
+  - Text: {fileID: 11400000, guid: eafce978d110b8f4a90b43877e26a49a, type: 2}
     Character: {fileID: 11400000, guid: e7b7f06b2b8f3e34c8f7361630361986, type: 2}
-  - Text: "\u0411\u0435\u0441\u0441\u043C\u044B\u0441\u043B\u0435\u043D\u043D\u043E"
+  - Text: {fileID: 11400000, guid: 7bafba13696fb0d4ab4b5482366ff70a, type: 2}
     Character: {fileID: 11400000, guid: a65fef14d0eed2d42972c951aefdb1f4, type: 2}
-  - Text: "\u0421\u043B\u043E\u0436\u043D\u044B\u0439 \u043F\u0440\u043E\u0446\u0435\u0441\u0441"
+  - Text: {fileID: 11400000, guid: bcf1fdd61766a274a91bff7154c07f67, type: 2}
     Character: {fileID: 11400000, guid: d8e6b4460d263e74f83b1dc1db34d9a5, type: 2}

@@ -3046,6 +3046,7 @@ MonoBehaviour:
   - {fileID: 2017849122}
   - {fileID: 1265225213}
   - {fileID: 460523179}
+  _questionNumberText: {fileID: 11400000, guid: 5ee68ae50ed16d34b976d75574de41f9, type: 2}
 --- !u!114 &1195299467
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e1a3ddf1292ae4a9d777a3fb2f4fd0, type: 3}
   m_Name: Question01
   m_EditorClassIdentifier: 
-  _ru: 
-  _en: 
-  _tr: 
+  _ru: "\u041D\u0430 \u0432\u0430\u0441 \u043D\u0430\u043F\u0430\u043B\u0438, \u0447\u0442\u043E
+    \u0432\u044B \u0441\u0434\u0435\u043B\u0430\u0435\u0442\u0435?"
+  _en: You were attacked, what will you do?
+  _tr: "Sald\u0131r\u0131ya u\u011Frad\u0131n\u0131z, ne yapacaks\u0131n\u0131z?"
