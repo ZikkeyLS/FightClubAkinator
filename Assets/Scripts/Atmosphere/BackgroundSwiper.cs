@@ -24,7 +24,7 @@ public class BackgroundSwiper : MonoBehaviour
         while (nextIndex != -1)
         {
             yield return new WaitForSeconds(_delay);
-            nextIndex = nextIndex > _images.Length - 1 ? 0 : nextIndex + 1;
+            nextIndex = nextIndex >= _images.Length - 1 ? 0 : nextIndex + 1;
             if (_animate.isOn)
                 StartCoroutine(PlaySwipeAnimation(nextIndex));
             else
