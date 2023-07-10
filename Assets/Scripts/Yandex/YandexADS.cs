@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using Agava.YandexGames;
+using System.Collections.Generic;
 
 public class YandexADS : MonoBehaviour
 {
     private IEnumerator Start()
     {
+        DontDestroyOnLoad(this);
 #if !UNITY_WEBGL || UNITY_EDITOR
         yield break;
 #endif

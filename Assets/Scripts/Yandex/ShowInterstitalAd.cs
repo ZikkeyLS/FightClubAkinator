@@ -11,13 +11,7 @@ public class ShowInterstitalAd : MonoBehaviour
 
     void Start()
     {
-        _button.onClick.AddListener(Restart);
-    }
-
-    public void Restart()
-    {
-        ChangeContext();
-        ChangeScene();
+        _button.onClick.AddListener(ChangeContext);
     }
 
     public void ChangeContext()
@@ -34,10 +28,5 @@ public class ShowInterstitalAd : MonoBehaviour
         {
             _ads.ShowInterstitialAd();
         }
-    }
-
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

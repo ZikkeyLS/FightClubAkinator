@@ -1,4 +1,3 @@
-using Agava.YandexGames;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -13,6 +12,22 @@ public class TextUnit
 public class TextInitializer : MonoBehaviour
 {
     [SerializeField] private TextUnit[] _units;
+    [SerializeField] private string _russianLocalizationName = "FightClubRU";
+
+    public static LocalizationParser _russianLocalization;
+    public static int QuestionCount => _russianLocalization.QuestionCount;
+    // public LocalizationParser _englishLocalization;
+    // public LocalizationParser _turkishLocalization;
+
+    public static TemplateQuestion GetProperQuestionData(int questionIndex)
+    {
+        return _russianLocalization.GetQuestionByIndex(questionIndex);
+    }
+
+    private void Awake()
+    {
+        _russianLocalization = new LocalizationParser(_russianLocalizationName);
+    }
 
     private IEnumerator Start()
     {

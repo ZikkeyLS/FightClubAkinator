@@ -11,7 +11,7 @@ public class Data
     public void SetFirstGame(bool value)
     {
         FirstGame = value;
-        // PlayerAccount.SetPlayerData(JsonUtility.ToJson(this));
+        PlayerAccount.SetPlayerData(JsonUtility.ToJson(this));
     }
 }
 
@@ -24,12 +24,10 @@ public class YandexData : MonoBehaviour
 #if !UNITY_WEBGL || UNITY_EDITOR
         yield break;
 #endif
-        yield return new WaitUntil(() => YandexGamesSdk.IsInitialized == true);
+        yield return new WaitUntil(() => YandexGamesSdk.IsInitialized == true && PlayerAccount.IsAuthorized);
 
         Data = new Data();
-
-      //  if (PlayerAccount.IsAuthorized == false)
-      //      PlayerAccount.Authorize(GetData);
+        GetData();
     }
 
     private void GetData()

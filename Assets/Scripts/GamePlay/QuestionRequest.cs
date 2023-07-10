@@ -10,7 +10,7 @@ public class QuestionRequest : MonoBehaviour
     [SerializeField] private VariativeText _questionNumberText;
     private TMP_Text[] _answersText;
 
-    public void MakeRequest(int id, Question question)
+    public void MakeRequest(int id, TemplateQuestion question)
     {
         if(_answersText == null)
         {
@@ -20,9 +20,9 @@ public class QuestionRequest : MonoBehaviour
         }
 
         _questionNumber.text = $"{_questionNumberText.GetText(YandexLanguage.Language)} {id}";
-        _questionText.text = question.Text.GetText(YandexLanguage.Language);
+        _questionText.text = question.Question;
 
         for (int i = 0; i < _answers.Length; i++)
-            _answersText[i].text = question.Answers[i].Text.GetText(YandexLanguage.Language);
+            _answersText[i].text = question.Answers[i].Data;
     }
 }

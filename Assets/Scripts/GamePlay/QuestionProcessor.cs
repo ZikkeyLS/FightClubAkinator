@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class QuestionProcessor : MonoBehaviour
@@ -17,13 +18,13 @@ public class QuestionProcessor : MonoBehaviour
 
     public void OnEnable()
     {
-        _answers = new Character[_questions.Length];
+        _answers = new Character[TextInitializer.QuestionCount];
         UpdateQuestion();
     }
 
     public bool UpdateQuestion()
     {
-        if(_questionIndex == _questions.Length - 1)
+        if(_questionIndex == TextInitializer.QuestionCount - 1)
         {
             Dictionary<Character, int> values = new Dictionary<Character, int>();
             int mainIndex = 0;
@@ -43,6 +44,7 @@ public class QuestionProcessor : MonoBehaviour
                 }
             }
 
+            _questionIndex = -1;
             _previousPanel.SetActive(false);
             _nextPanel.SetActive(true);
             _result.Initialize(mainCharacter);
@@ -50,12 +52,14 @@ public class QuestionProcessor : MonoBehaviour
         }
 
         _questionIndex += 1;
-        _request.MakeRequest(_questionIndex + 1, _questions[_questionIndex]);
+        _request.MakeRequest(_questionIndex + 1, TextInitializer.GetProperQuestionData(_questionIndex));
         return true;
     }
 
     public void WriteAnswer(int answerIndex)
     {
-        _answers[_questionIndex] = _questions[_questionIndex].Answers[answerIndex].Character;
+        _answers[_questionIndex] = GetCharacter(TextInitializer.GetProperQuestionData(_questionIndex).Answers[answerIndex].Character);
     }
+
+    private Character GetCharacter(FilmCharacter character) => _characters.First((value) => value.FilmCharacter == character);
 }
