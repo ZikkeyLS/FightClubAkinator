@@ -15,6 +15,8 @@ public class Music : MonoBehaviour
     [SerializeField] private AudioSource _audioPlayer;
     [SerializeField] private AudioElement[] _music;
     [SerializeField] private Slider _modifier;
+
+    private bool _stop = false;
     private int _index = 0;
 
     private static float ModifierValue = 0.5f;
@@ -32,12 +34,24 @@ public class Music : MonoBehaviour
 
     private void Update()
     {
-        if (_audioPlayer.isPlaying == false && Application.isFocused)
+        if (_audioPlayer.isPlaying == false && _stop == false && Application.isFocused)
         {
             _audioPlayer.clip = _music[_index].clip;
             _audioPlayer.volume = _music[_index].volume * (_modifier.value / _modifier.maxValue);
             _audioPlayer.Play();
             _index = _index < _music.Length - 1 ? _index + 1 : 0;
         }
+    }
+
+    public void Stop()
+    {
+        _audioPlayer.Pause();
+        _stop = true;
+    }
+
+    public void Continue()
+    {
+        _audioPlayer.UnPause();
+        _stop = false;
     }
 }

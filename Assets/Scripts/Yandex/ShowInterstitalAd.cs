@@ -1,6 +1,5 @@
 using Agava.YandexGames;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ShowInterstitalAd : MonoBehaviour

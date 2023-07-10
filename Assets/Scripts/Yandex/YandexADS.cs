@@ -1,10 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using Agava.YandexGames;
-using System.Collections.Generic;
 
 public class YandexADS : MonoBehaviour
 {
+    [SerializeField] private Music _music;
+
     private IEnumerator Start()
     {
         DontDestroyOnLoad(this);
@@ -22,6 +23,8 @@ public class YandexADS : MonoBehaviour
 
     public void ShowInterstitialAd()
     {
-        InterstitialAd.Show();
+        InterstitialAd.Show(() => { _music.Stop(); }, (r) => { _music.Continue(); });
     }
+
+   
 }
