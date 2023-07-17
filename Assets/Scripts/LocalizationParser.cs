@@ -85,10 +85,5 @@ public class LocalizationParser
         {
             _questions.Add(new TemplateQuestion(lines[i], lines[i + 1], lines[i + 2], lines[i + 3], lines[i + 4]));
         }
-
-        foreach (KeyValuePair<FilmCharacter, int> value in TemplateAnswer.Analytics)
-        {
-            // Debug.Log(value.Key + " " + value.Value);
-        }
     }
 }

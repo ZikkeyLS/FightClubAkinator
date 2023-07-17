@@ -15,32 +15,27 @@ public class YandexLanguage : MonoBehaviour
 
     private IEnumerator Start()
     {
-        Language = LanguageYandex.ru;
-        Initialized = true;
-        yield return new WaitForEndOfFrame();
-        /*
 #if !UNITY_WEBGL || UNITY_EDITOR
-Language = _testLanguage;
-Initialized = true;
-yield break;
+        Language = _testLanguage;
+        Initialized = true;
+        yield break;
 #endif
-Initialized = false;
-yield return new WaitUntil(() => YandexGamesSdk.IsInitialized == true);
+        Initialized = false;
+        yield return new WaitUntil(() => YandexGamesSdk.IsInitialized == true);
 
-switch (YandexGamesSdk.Environment.i18n.lang.ToLower())
-{
-    case "ru":
-        Language = LanguageYandex.ru;
-        break;
-    case "en":
-        Language = LanguageYandex.en;
-        break;
-    case "tr":
-        Language = LanguageYandex.tr;
-        break;
-}
+        switch (YandexGamesSdk.Environment.i18n.lang.ToLower())
+        {
+            case "ru":
+                Language = LanguageYandex.ru;
+                break;
+            case "en":
+                Language = LanguageYandex.en;
+                break;
+            case "tr":
+                Language = LanguageYandex.tr;
+                break;
+        }
 
-Initialized = true;
-*/
+        Initialized = true;
     }
 }
